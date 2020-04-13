@@ -36,6 +36,10 @@ macOS 上用 =brew install gtk+3= 安装 GTK 3，小心 =gtk+= formula 是 GTK 2
 
 单列布局，两个标签一个按钮竖着拍出一列，按钮高度不扩大。
 
+** [[file:07-file-choose-dialog.c]] 文件选择器 GtkFileChooserNative
+
+分别尝试 GTK 和 macOS 系统风格，前者有点儿小清新，当然首选系统风格的。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
