@@ -50,7 +50,7 @@ macOS 上用 =brew install gtk+3= 安装 GTK 3，小心 =gtk+= formula 是 GTK 2
 
 ** [[file:10-tooltip.c]] 提示符 GtkTooltip
 
-3 中 tooltip
+3 种 tooltip
 
 - 纯文本
 - Pango Markup
