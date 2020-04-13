@@ -1,0 +1,22 @@
+* Hello, GTK
+
+感觉会一点 GUI 开发挺有用，试试了解下 [GTK](https://gtk.org/) 开发，起码能写个最简单的计算器。
+
+** 过程记录
+
+*** macOS 安装 GTK 3
+
+macOS 上用 =brew install gtk+3= 安装 GTK 3，小心 =gtk+= formula 是 GTK 2。
+
+*** [[file:00-version.c]] 打印 GTK+ 版本号
+
+用 =gtk_major_version= 宏能访问到编译所用的 GTK 版本.
+
+*** [[file:01-hello.c]] 显示窗口
+
+显示一个空白的窗口，没别的。
+
+** 参考资料
+
+- [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
+- [[http://zetcode.com/tutorials/gtktutorial/][GTK+ programming tutorial]] 好像针对 GTK 2 而不是 GTK 3
