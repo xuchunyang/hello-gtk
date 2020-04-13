@@ -56,6 +56,10 @@ macOS 上用 =brew install gtk+3= 安装 GTK 3，小心 =gtk+= formula 是 GTK 2
 - Pango Markup
 - 自定义
 
+** [[file:11-multiline-text.c]] 跨行文本框 GtkTextView
+
+显示一个跨行文本框，用户可以编辑。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
