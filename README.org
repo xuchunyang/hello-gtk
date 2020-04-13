@@ -60,6 +60,12 @@ macOS 上用 =brew install gtk+3= 安装 GTK 3，小心 =gtk+= formula 是 GTK 2
 
 显示一个跨行文本框，用户可以编辑。
 
+** [[file:12-http-request-sync.c]] 同步地 HTTP 请求
+
+依赖 libsoup 「HTTP client/server library for GNOME」，需要单独安装： =brew install libsoup= 。
+
+等待用户输入一个 URL，使用 =soup_session_send_message= 同步地发 HTTP 请求，显示结果。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
