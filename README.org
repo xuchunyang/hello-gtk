@@ -24,6 +24,10 @@ macOS 上用 =brew install gtk+3= 安装 GTK 3，小心 =gtk+= formula 是 GTK 2
 
 显示一个按钮，用户点击时打印一条消息。
 
+** [[file:04-image.c]] 图片
+
+显示一张图片。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
