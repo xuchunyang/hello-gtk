@@ -12,21 +12,25 @@ macOS 上用 =brew install gtk+3= 安装 GTK 3，小心 =gtk+= formula 是 GTK 2
 
 用 =gtk_major_version= 宏能访问到编译所用的 GTK 版本.
 
-** [[file:01-hello.c]] 显示窗口
+** [[file:01-hello.c]] 显示窗口 GtkWindow
 
 显示一个空白的窗口，没别的。
 
-** [[file:02-label.c]] 标签
+** [[file:02-label.c]] 标签 GtkLabel
 
 显示一个标签。
 
-** [[file:03-button.c]] 按钮
+** [[file:03-button.c]] 按钮 GtkButton
 
 显示一个按钮，用户点击时打印一条消息。
 
-** [[file:04-image.c]] 图片
+** [[file:04-image.c]] 图片 GtkImage
 
 显示一张图片。
+
+** [[file:05-input.c]] 用户输入 GtkEntry
+
+接收用户输入，用户按确定键，打印输入。
 
 * 参考资料
 
