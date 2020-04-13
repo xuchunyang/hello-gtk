@@ -51,12 +51,7 @@ int main(void) {
      /* https://developer.gnome.org/pygtk/stable/pango-markup-language.html */
      "<s><i><span size=\"large\" foreground=\"red\">Strikethrough</span></i></s>");
 
-  /* 设置 label3 的 “has-tooltip” 为 TRUE */
-  GValue a = {0};
-  g_value_init(&a, G_TYPE_BOOLEAN);
-  g_value_set_boolean(&a, TRUE);
-  g_object_set_property(G_OBJECT(label3), "has-tooltip", &a);
-  g_value_unset(&a);
+  g_object_set(G_OBJECT(label3), "has-tooltip", TRUE, (void*)0);
 
   GtkWidget* image = gtk_image_new_from_file("GTK_logo.svg");
 
