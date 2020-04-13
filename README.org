@@ -40,6 +40,10 @@ macOS 上用 =brew install gtk+3= 安装 GTK 3，小心 =gtk+= formula 是 GTK 2
 
 分别尝试 GTK 和 macOS 系统风格，前者有点儿小清新，当然首选系统风格的。
 
+** [[file:08-progress-bar.c]] 进度条 GtkProgressBar
+
+使用定时器更新进度条。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
