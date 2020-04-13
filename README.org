@@ -32,6 +32,10 @@ macOS 上用 =brew install gtk+3= 安装 GTK 3，小心 =gtk+= formula 是 GTK 2
 
 接收用户输入，用户按确定键，打印输入。
 
+** [[file:06-layout.c]] 布局 GtkBox
+
+单列布局，两个标签一个按钮竖着拍出一列，按钮高度不扩大。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
