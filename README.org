@@ -99,6 +99,10 @@ macOS 上用 =brew install gtk+3= 安装 GTK 3，小心 =gtk+= formula 是 GTK 2
 2. g_file_read 创建 GFileInputStream
 3. g_input_stream_read 读取 stream
 
+** [[file:19-frame.c]] 装饰性边框 GtkFrame
+
+阴影基本看不出效果来，起码 macOS 是如此，是不是 GTK 主题跟 macOS 不协调？
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
