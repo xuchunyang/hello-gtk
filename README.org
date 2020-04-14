@@ -75,6 +75,15 @@ macOS 上用 =brew install gtk+3= 安装 GTK 3，小心 =gtk+= formula 是 GTK 2
 - 要处理窗口移动和缩放，响应 configure-event
 - 要处理窗口拖拽，响应 button-press-event，用 gtk_window_begin_move_drag 移动窗口
 
+** [[file:15-dialog.c]] 对话框
+
+各种对话框：
+- 自定义
+- 消息
+- 关于
+- 颜色选择
+- 字体选择
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
