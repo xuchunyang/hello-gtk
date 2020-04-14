@@ -84,6 +84,11 @@ macOS 上用 =brew install gtk+3= 安装 GTK 3，小心 =gtk+= formula 是 GTK 2
 - 颜色选择
 - 字体选择
 
+** [[file:16-clipboard.c]] 读写剪切板
+
+- gtk_clipboard_wait_for_text 读取
+- gtk_clipboard_set_text 写入
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
