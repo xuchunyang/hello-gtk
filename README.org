@@ -107,6 +107,10 @@ macOS 上用 =brew install gtk+3= 安装 GTK 3，小心 =gtk+= formula 是 GTK 2
 
 用 gtk_statusbar_push 更新状态栏信息。
 
+** [[file:21-gtk-grid.c]] 网格布局 GtkGrid
+
+使用 gtk_grid_attach 添加元素。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
