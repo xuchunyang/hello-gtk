@@ -89,9 +89,15 @@ macOS 上用 =brew install gtk+3= 安装 GTK 3，小心 =gtk+= formula 是 GTK 2
 - gtk_clipboard_wait_for_text 读取
 - gtk_clipboard_set_text 写入
 
-** [[file17-process.c]] 子进程
+** [[file:17-process.c]] 子进程
 
 同步和异步子进程，异步子进程的 IO 不会用。
+
+** [[file:18-gio-readfile.c]] GIO 读取文件
+
+1. g_file_new_for_path 创建 GFile
+2. g_file_read 创建 GFileInputStream
+3. g_input_stream_read 读取 stream
 
 * 参考资料
 
