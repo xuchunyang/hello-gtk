@@ -70,6 +70,11 @@ macOS 上用 =brew install gtk+3= 安装 GTK 3，小心 =gtk+= formula 是 GTK 2
 
 试了两种方法 [[https://developer.gnome.org/json-glib/1.2/JsonPath.html][JsonPath]] 和 [[https://developer.gnome.org/json-glib/1.2/JsonReader.html][JsonReader]] ，中文(UTF-8)有问题，不知道为什么。另外没想到 C 读取个 JSON 这么不容易。
 
+** [[file:14-events.c]] 处理窗口缩放、拖拽移动事件
+
+- 要处理窗口移动和缩放，响应 configure-event
+- 要处理窗口拖拽，响应 button-press-event，用 gtk_window_begin_move_drag 移动窗口
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
