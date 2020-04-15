@@ -127,6 +127,10 @@ GtkTreeWidget 采用 Model/View/Control
 
 用 gtk_tree_store_set 插入列，不同 GtkTreeIter 表示层级。
 
+** [[file:25-cairo.c]] 画图 GtkDrawingArea
+
+GtkDrawingArea 是画图控件，响应它发出的 draw 信号，然后用它传递过来的 cairo_t 作图。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
