@@ -119,6 +119,10 @@ GtkTreeWidget 采用 Model/View/Control
 - GtkWidget 是 View，添加栏用 GtkTreeViewColumn，单元格显示用 GtkCellRenderer 控制
 - 用 GtkTreeSelection 响应用户选择
 
+** [[file:23-search-entry.c]] 搜索控件 GtkSearchEntry
+
+修改之后 150 毫秒 GtkSearchEntry 会发出 search-changed 信号。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
