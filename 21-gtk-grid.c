@@ -12,7 +12,7 @@ int main(void) {
   gtk_init(0, 0);
 
   GtkWidget* window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-  gtk_window_set_title(GTK_WINDOW(window), "GtkIconView 演示");
+  gtk_window_set_title(GTK_WINDOW(window), "GtkGrid 演示");
   gtk_window_set_default_size(GTK_WINDOW(window), 250, 180);
   gtk_container_set_border_width(GTK_CONTAINER(window), 5);
   gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER);
