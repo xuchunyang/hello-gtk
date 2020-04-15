@@ -114,4 +114,6 @@ macOS 上用 =brew install gtk+3= 安装 GTK 3，小心 =gtk+= formula 是 GTK 2
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
-- [[http://zetcode.com/tutorials/gtktutorial/][GTK+ programming tutorial]] 好像针对 GTK 2 而不是 GTK 3
+- [[http://zetcode.com/tutorials/gtktutorial/][GTK+ programming tutorial]] 注意针对 GTK 2 而不是 GTK 3
+- [[https://valadoc.org/][Valadoc.org – Stays crunchy. Even in milk.]] 搜索 API 文档
+- [[https://python-gtk-3-tutorial.readthedocs.io/en/latest/][The Python GTK+ 3 Tutorial — Python GTK+ 3 Tutorial 3.4 documentation]] 比较新
