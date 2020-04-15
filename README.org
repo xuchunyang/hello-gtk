@@ -111,6 +111,14 @@ macOS 上用 =brew install gtk+3= 安装 GTK 3，小心 =gtk+= formula 是 GTK 2
 
 使用 gtk_grid_attach 添加元素。
 
+** [[file:22-list-view.c]] 列表控件 GtkTreeWidget
+
+GtkTreeWidget 采用 Model/View/Control
+
+- GtkListStore 是 Model，往里面添加数据，用到 GtkTreeIter gtk_list_store_append gtk_list_store_set
+- GtkWidget 是 View，添加栏用 GtkTreeViewColumn，单元格显示用 GtkCellRenderer 控制
+- 用 GtkTreeSelection 响应用户选择
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
