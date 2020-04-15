@@ -123,6 +123,10 @@ GtkTreeWidget 采用 Model/View/Control
 
 修改之后 150 毫秒 GtkSearchEntry 会发出 search-changed 信号。
 
+** [[file:24-tree-view.c]] 带层级的列表控件 GtkTreeView
+
+用 gtk_tree_store_set 插入列，不同 GtkTreeIter 表示层级。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
