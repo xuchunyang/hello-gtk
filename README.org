@@ -144,6 +144,10 @@ GtkDrawingArea 是画图控件，响应它发出的 draw 信号，然后用它�
 
 复制 https://python-gtk-3-tutorial.readthedocs.io/en/latest/layout.html#grid 的效果。
 
+** [[file:27-list-box.c]] 列表容器 GtkListBox
+
+GtkListBox 是个垂直的列表控件，元素可以选中、排序、过滤，相比之下 GtkTreeWidget 更加一般化。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
