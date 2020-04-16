@@ -131,6 +131,19 @@ GtkTreeWidget 采用 Model/View/Control
 
 GtkDrawingArea 是画图控件，响应它发出的 draw 信号，然后用它传递过来的 cairo_t 作图。
 
+** [[file:26-gtk-grid-2.c]] 网格布局 GtkGrid
+
+用 gtk_grid_attach 添加元素，参数
+
+1. `GtkGrid * grid`
+2. `GtkWidget * child` 要加的元素
+3. `gint left` X 坐标, 从零开始计数
+4. `gint top` Y 坐标，从零开始计数
+5. `gint width` 占几列
+6. `gint height` 占几行
+
+复制 https://python-gtk-3-tutorial.readthedocs.io/en/latest/layout.html#grid 的效果。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
