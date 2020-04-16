@@ -156,6 +156,10 @@ GtkTooltip 鼠标悬停自动弹出窗口，GtkPopover 需要用户点击，GtkP
 
 GtkStack 是个容器，把显示的也页面加入其中，再用 GtkStackSwitcher 得到一个换页 Tab bar。
 
+** [[file:30-headerbar.c]] 定制标题栏
+
+用 GtkHeaderBar 替换自带标题栏。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
