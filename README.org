@@ -166,6 +166,10 @@ GtkStack 是个容器，把显示的也页面加入其中，再用 GtkStackSwitc
 
 注意如果内容多，窗口怎么也放不下，应该用 GtkScrolledWindow 包裹起来，比如窗口过大。
 
+** [[file:32-notebook.c]] 标签页 GtkNotebook
+
+GtkNotebook 是个容器，像书一样，往里面添加页，每次只显示其中一页。更浏览器 Tab 页一个意思。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
