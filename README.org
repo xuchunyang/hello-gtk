@@ -152,6 +152,10 @@ GtkListBox 是个垂直的列表控件，元素可以选中、排序、过滤，
 
 GtkTooltip 鼠标悬停自动弹出窗口，GtkPopover 需要用户点击，GtkPopover 是个容器，添加什么元素就显示什么，需要调用 gtk_widget_show 和 gtk_popover_popup 显示。
 
+** [[file:29-stack.c]] 换页控件 GtkStack
+
+GtkStack 是个容器，把显示的也页面加入其中，再用 GtkStackSwitcher 得到一个换页 Tab bar。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
