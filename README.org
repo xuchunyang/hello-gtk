@@ -160,6 +160,12 @@ GtkStack 是个容器，把显示的也页面加入其中，再用 GtkStackSwitc
 
 用 GtkHeaderBar 替换自带标题栏。
 
+** [[file:31-flowbox.c]] GtkFlowBox 水平或垂直自适应
+
+比如一行放 100 个按钮，显然放不下，用 GtkFlowBox 之后空间不够时自动换行。
+
+注意如果内容多，窗口怎么也放不下，应该用 GtkScrolledWindow 包裹起来，比如窗口过大。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
