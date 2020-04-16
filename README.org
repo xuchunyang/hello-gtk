@@ -170,6 +170,10 @@ GtkStack 是个容器，把显示的也页面加入其中，再用 GtkStackSwitc
 
 GtkNotebook 是个容器，像书一样，往里面添加页，每次只显示其中一页。更浏览器 Tab 页一个意思。
 
+** [[file:33-spinner.c]] 加载动画 GtkSpinner
+
+GtkSpinner 控件分别用 gtk_spinner_start/stop 控制开关。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
