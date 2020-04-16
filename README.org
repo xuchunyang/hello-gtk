@@ -148,6 +148,10 @@ GtkDrawingArea 是画图控件，响应它发出的 draw 信号，然后用它�
 
 GtkListBox 是个垂直的列表控件，元素可以选中、排序、过滤，相比之下 GtkTreeWidget 更加一般化。
 
+** [[file:28-popover.c]] 弹出菜单 GtkPopover
+
+GtkTooltip 鼠标悬停自动弹出窗口，GtkPopover 需要用户点击，GtkPopover 是个容器，添加什么元素就显示什么，需要调用 gtk_widget_show 和 gtk_popover_popup 显示。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
