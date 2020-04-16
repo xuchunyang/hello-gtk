@@ -1,8 +1,9 @@
 /* 25-cairo.c --- cairo 测试 */
 #include <cairo.h>
 #include <gtk/gtk.h>
+#include <math.h>
 
-static gboolean on_draw_event(GtkWidget* widget __attribute__((unused)),
+static gboolean on_draw_event(GtkWidget* widget,
                               cairo_t* cr,
                               gpointer data __attribute__((unused))) {
   g_message("on_draw_event: 画图...");
@@ -23,6 +24,42 @@ static gboolean on_draw_event(GtkWidget* widget __attribute__((unused)),
   cairo_move_to(cr, 100, 100);
   /* 写 */
   cairo_show_text(cr, "Hello, 世界");
+
+  cairo_set_source_rgb(cr, 0, 0, 0);
+  cairo_set_line_width(cr, 1);
+  cairo_move_to(cr, 0, 0);
+  cairo_line_to(cr, 200, 200);
+  /* 描线 */
+  cairo_stroke(cr);
+
+  cairo_set_line_width(cr, 9);
+  cairo_set_source_rgb(cr, 0.69, 0.19, 0);
+  GtkWidget* window = gtk_widget_get_toplevel(widget);
+  gint width;
+  gint height;
+  gtk_window_get_size(GTK_WINDOW(window), &width, &height);
+  /* 原点居中 */
+  cairo_translate(cr, width/2, height/2);
+  cairo_arc(cr, 0, 0, 50, 0, 2 * M_PI);
+  /* 描线不清空形状 */
+  cairo_stroke_preserve(cr);
+  cairo_set_source_rgb(cr, 0.3, 0.4, 0.6);
+  cairo_fill(cr);
+
+  /* XXX 搞不清楚 cairo_translate 的效果如何取消？ */
+  cairo_translate(cr, 0, 0);
+  double x;
+  double y;
+  cairo_move_to(cr, 0, 0);
+  cairo_get_current_point(cr, &x, &y);
+  g_debug("x: %g, y: %g\n", x, y);
+  cairo_rel_move_to(cr, -x, 0);
+  cairo_move_to(cr, 0, 200);
+  for (size_t i = 1; i <= 10; ++i) {
+    cairo_set_source_rgba(cr, 0, 0, 1, i*0.1);
+    cairo_rectangle(cr, 50*i, 20, 40, 40);
+    cairo_fill(cr);
+  }
 
   return FALSE;
 }
