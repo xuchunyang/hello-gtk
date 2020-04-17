@@ -174,6 +174,10 @@ GtkNotebook 是个容器，像书一样，往里面添加页，每次只显示�
 
 GtkSpinner 控件分别用 gtk_spinner_start/stop 控制开关。
 
+** [[file:34-glib-the-easy-parts.c]] GLib 简单部分
+
+试用 GLib 容易理解和使用的 API。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
