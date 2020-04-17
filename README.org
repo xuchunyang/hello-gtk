@@ -178,6 +178,15 @@ GtkSpinner 控件分别用 gtk_spinner_start/stop 控制开关。
 
 试用 GLib 容易理解和使用的 API。
 
+** [[file:35-glib-the-data-types.c]] GLib 数据结构
+
+- GString 动态字符串
+- GArray 动态数组，但元素类型（大小）必须一致
+- GHashTable 哈希表，键必须可比较（即能判断两个是否相同，所以键类型应该一样？），值无所谓
+- GList 动态列表，元素是指针
+- GQueue 队列
+- GTree 🌲
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
