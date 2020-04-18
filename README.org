@@ -193,6 +193,12 @@ GtkSpinner 控件分别用 gtk_spinner_start/stop 控制开关。
 
 用 =GTK_DEBUG=interactive ./36-gtk-css= 调出交互 Debugger，可以实时改变 CSS。
 
+** [[file:37-pango.c]] Pango 文字排版
+
+用 PangoLayout 存储文字内容，用 PangoFontDescription 设置字体，用 pango_cairo_show_layout 显示。
+
+用 Pango 可以中文竖排，见 https://pango.gnome.org/ScriptGallery 截图，目前还不清楚代码怎么弄。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
