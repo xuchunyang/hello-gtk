@@ -199,6 +199,12 @@ GtkSpinner 控件分别用 gtk_spinner_start/stop 控制开关。
 
 用 Pango 可以中文竖排，见 https://pango.gnome.org/ScriptGallery 截图，目前还不清楚代码怎么弄。
 
+** [[file:38-gio-http-req.c]] HTTP request with GIO
+
+目的是实现 =curl example.com= 。
+
+用 g_socket_client_connect_to_host 建立连接，然后通过 GOutputStream 和 GInputStream 输入输出。有一个问题是不知道服务器的输出结束了没，我以为该报 EOF 却没报。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
