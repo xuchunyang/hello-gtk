@@ -187,6 +187,12 @@ GtkSpinner 控件分别用 gtk_spinner_start/stop 控制开关。
 - GQueue 队列
 - GTree 🌲
 
+** [[file:36-gtk-css.c]] GtkCssProvider 用 CSS 定制 GTK
+
+用 gtk_widget_set_name 添加 ID，给 CSS 当选择器。
+
+用 =GTK_DEBUG=interactive ./36-gtk-css= 调出交互 Debugger，可以实时改变 CSS。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference

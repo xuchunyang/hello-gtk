@@ -1,0 +1,44 @@
+window {
+    background-color: magenta;
+}
+
+grid {
+    background-color: cyan;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin: 20px;
+}
+
+button {
+    background-image: none;
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+#myButton_red {
+    background-color: red;
+}
+
+#myButton_yellow {
+    background-color: yellow;
+}
+
+#myButton_green {
+    background-color: green;
+}
+
+#myButton_blue {
+    background-color: blue;
+}
+
+#myButton_red:hover,
+#myButton_yellow:hover,
+#myButton_green:hover,
+#myButton_blue:hover {
+    background-color: black;
+}
