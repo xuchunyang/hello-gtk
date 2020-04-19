@@ -205,6 +205,12 @@ GtkSpinner 控件分别用 gtk_spinner_start/stop 控制开关。
 
 用 g_socket_client_connect_to_host 建立连接，然后通过 GOutputStream 和 GInputStream 输入输出。有一个问题是不知道服务器的输出结束了没，我以为该报 EOF 却没报。
 
+** [[file:39-gtksourceview.c]] GtkSourceView 编辑器库
+
+安装 =brew install gtksourceview4= 。
+
+GtkSourceView 是 GtkTextView 的扩展（子类），分别用 GtkSourceView 和 GtkSourceBuffer 控制显示和内容。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
