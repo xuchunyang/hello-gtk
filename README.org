@@ -225,7 +225,7 @@ VteTerminal 是个 GTK 控件，用 vte_terminal_spawn_async 启动 shell。
 
 ** [[file:42-async-countdown.c]] Async 编程基础之单个操作
 
-[[https://developer.gnome.org/programming-guidelines/stable/async-programming.html.en][Asynchronous Programming]] 之 Single Operation
+https://developer.gnome.org/programming-guidelines/stable/async-programming.html.en#single-call
 
 倒计时 5 秒，加个取消的按钮。
 
