@@ -211,6 +211,12 @@ GtkSpinner 控件分别用 gtk_spinner_start/stop 控制开关。
 
 GtkSourceView 是 GtkTextView 的扩展（子类），分别用 GtkSourceView 和 GtkSourceBuffer 控制显示和内容。
 
+** [[file:40-gspell.c]] 拼写检查
+
+安装 =brew install gspell= 。
+
+可以给 GtkEntry 和 GtkTextView 加上拼写检查。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
