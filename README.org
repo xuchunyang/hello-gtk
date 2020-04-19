@@ -223,6 +223,14 @@ GtkSourceView 是 GtkTextView 的扩展（子类），分别用 GtkSourceView �
 
 VteTerminal 是个 GTK 控件，用 vte_terminal_spawn_async 启动 shell。
 
+** [[file:42-async-countdown.c]] Async 编程基础之单个操作
+
+[[https://developer.gnome.org/programming-guidelines/stable/async-programming.html.en][Asynchronous Programming]] 之 Single Operation
+
+倒计时 5 秒，加个取消的按钮。
+
+调用 xxx_async 启动异步，提供一个结束的回调函数 GAsyncReadyCallback，在这个回调函数中调用 xxx_finish 获得返回值（或者错误）。调用 xxx_async 时还可以提供一个 GCancellable 对象，后续调用 g_cancellable_cancel 就能取消该异步操作。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
