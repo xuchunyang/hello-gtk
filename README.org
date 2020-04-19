@@ -217,6 +217,12 @@ GtkSourceView 是 GtkTextView 的扩展（子类），分别用 GtkSourceView �
 
 可以给 GtkEntry 和 GtkTextView 加上拼写检查。
 
+** [[file:41-terminal.c]] 终端应用 VTE
+
+安装 =brew install vte3= 。
+
+VteTerminal 是个 GTK 控件，用 vte_terminal_spawn_async 启动 shell。
+
 * 参考资料
 
 - [[https://developer.gnome.org/][GNOME Developer Center]] 主要就是 API Reference
